@@ -1,0 +1,231 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(180deg, #fff9fb, #ffe6f2);
+  color: #333;
+  text-align: center;
+  line-height: 1.6;
+}
+
+header {
+  background: linear-gradient(135deg, #ff85c1, #ff4d94);
+  padding: 5px 5px;
+  color: white;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-size: 200% 200%;
+  animation: gradient-animation 8s ease infinite;
+}
+
+header h1 {
+  margin: 20px 0 0;
+  font-size: 3.2em;
+  font-weight: 700;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.15);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 40px;
+  gap: 12px;
+}
+
+nav {
+  margin-top: 20px;
+}
+
+nav a {
+  margin: 0 20px;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-size: 1.1em;
+  padding: 8px 15px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.welcome-card {
+  background: white;
+  padding: 50px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  margin-top: 40px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.welcome-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(255, 133, 193, 0.25);
+}
+
+footer {
+  margin-top: 80px;
+  padding: 20px;
+  border-top: 1px solid #ffd6e8;
+  color: #a0a0a0;
+  font-size: 0.9em;
+}
+
+main {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+main p {
+  font-size: 1.2em;
+  color: #444;
+  margin-top: 10px;
+}
+
+.form-box {
+  max-width: 600px;
+  margin: 40px auto;
+  background: white;
+  padding: 45px;
+  border-radius: 25px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+  text-align: left;
+}
+
+.form-box h2 {
+  text-align: center;
+  color: #ff4d94;
+  margin-bottom: 25px;
+  font-size: 2em;
+  font-weight: 700;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+form label {
+  font-weight: 600;
+  color: #444;
+}
+
+form input, form button {
+  width: 100%;
+  padding: 14px;
+  border-radius: 12px;
+  border: 1px solid #ffd6e8;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+form input:focus {
+  border-color: #ff85c1;
+  outline: none;
+  box-shadow: 0 0 8px rgba(255,133,193,0.5);
+}
+
+form button {
+  background: linear-gradient(135deg, #ff7eb9, #ff4d94);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background: linear-gradient(135deg, #ff4d94, #e60073);
+}
+
+.table-box {
+  max-width: 100%;
+  margin: 40px auto;
+  background: white;
+  padding: 35px;
+  border-radius: 25px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 17px;
+}
+
+thead {
+  background: linear-gradient(135deg, #ff7eb9, #ff4d94);
+  color: white;
+  font-size: 19px;
+}
+
+th, td {
+  border: 1px solid #ffd6e8;
+  padding: 14px;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+  padding: 10px;
+}
+
+tbody tr:nth-child(even) {
+  background: #fff5fa;
+}
+
+tbody tr:hover {
+  background: #ffe6f2;
+}
+
+.acoes-cell {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+
+.btn-acao {
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.btn-editar {
+  background: #ff4d94;
+}
+.btn-editar:hover {
+  background: #e60073;
+}
+
+.btn-excluir {
+  background: #ff4d94;
+}
+.btn-excluir:hover {
+  background: #e60073;
+}
+
+@keyframes gradient-animation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.vazio {
+  font-style: italic;
+  color: #b94d7f;
+  text-align: center;
+  margin-top: 15px;
+}

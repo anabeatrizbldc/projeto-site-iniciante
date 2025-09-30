@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Lista de Produtos</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>🛍️ lista de produtos</h1>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="cadastro.html">Cadastrar Produto</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="table-box">
+      <table id="tabelaProdutos">
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Preço</th>
+            <th>Categoria</th>
+            <th>Origem</th>
+            <th>Lote</th>
+            <th>Validade</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody id="listaProdutos"></tbody>
+      </table>
+      <p id="msgVazio" class="vazio">Nenhum produto cadastrado ainda 💖</p>
+    </div>
+  </main>
+</body>
+</html>
